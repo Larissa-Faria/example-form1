@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de contato</h1>
+    <form action="https://formsubmit.co/larissa-faria@outlook.com.br" method="POST">
+        <input type="text" name="name" placeholder="Nome" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message"placeholder="Digite a sua mensagem"></textarea>
+        <input type="hidden" name="_captcha" value="false"> <!--Desativar reCAPTCHA-->
+        <input type="hidden" name="_next" value="https://contato-formulario.netlify.app"> <!--após enviar um formulário, o usuário vê a página-->
+        <input type="hidden" name="_template" value="table"> <!--selecionar um modelo de email -->
+        <button type="submit">Enviar</button>
+   </form> 
+    </div>
+</body>
+</html>
